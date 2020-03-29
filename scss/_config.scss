@@ -9,7 +9,7 @@ $max-width: 1100px;
 
 //set text color based on bg
 @function set-text-color($color) {
-  @if(lightness($color) > 50) {
+  @if(lightness($color) > 60) {
     @return #333;
   }
 
@@ -60,5 +60,26 @@ $max-width: 1100px;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
     }
+  }
+}
+
+//margin and padding
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}rem 0;
   }
 }
