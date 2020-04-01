@@ -36,11 +36,13 @@ body {
   justify-content: space-between;
   padding: 0.7rem 2rem;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid $primary-color;
-  opacity: 0.9;
+  box-shadow: 13px 13px 20px #cbced1;
+  h1 a{
+    color: $primary-color;
+  }
 
   ul {
     display: flex;
@@ -48,6 +50,11 @@ body {
     li {
       position: relative;
       z-index: 1;
+      padding: 3px 5px;
+
+      a {
+        color: $primary-color;
+      }
 
       &::before {
         content: '';
@@ -74,18 +81,21 @@ body {
 
       &:hover {
         &::before {
-          background: #ddd;
+          background: $primary-color;
           left: 49%;
           width: 30%;
           top: 1px;
         }
 
         &:after {
-          background: #ddd;
+          background: $primary-color;
           width: 80%;
           left: 10%;
           height: 100%;
-          // border-radius: 6px;
+          border-radius: 6px;
+        }
+        a{
+          color: #ddd;
         }
       }
     }
@@ -128,7 +138,7 @@ body {
   align-items: center;
   padding: 1rem;
   line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 //profile page
@@ -230,6 +240,25 @@ body {
   img {
     width: 150px;
   }
+}
+
+.posts {
+  margin-bottom: 30px;
+}
+
+.sign-in, .register {
+  max-width: 440px;
+  margin: 30px auto;
+  text-align: center;
+  .btn-primary {
+    width: 100px;
+    border-radius: 40px;
+  }
+}
+
+.add-education, .add-experience {
+  width: 80%;
+  margin: 0 auto 30px auto;
 }
 
 @import 'mobile';

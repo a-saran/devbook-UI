@@ -1,5 +1,6 @@
 $background: #ecf0f3;
 $primary-color: #1762b8;
+$priamryLight: #0f6dd8;
 // #17a2b8;
 $dark-color: #343a40;
 $light-color: #f4f4f4;
@@ -33,6 +34,7 @@ $dropShadow3: inset 8px 8px 8px #cbced1,//input
 }
 
 @mixin btn-style($bg, $color) {
+  font:inherit;
   display: inline-block;
   background: $bg;
   color: $color;
@@ -91,4 +93,13 @@ $spaceamounts: (1, 2, 3, 4, 5);
   .py-#{$space} {
     padding: #{$space}rem 0;
   }
+
+  .br-#{$space} {
+    border-radius: #{$space}rem;
+  }
+}
+
+.m-auto {
+  display: flex;
+  margin: auto;
 }

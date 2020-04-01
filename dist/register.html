@@ -17,7 +17,7 @@
     <title>Welcome to DevBook</title>
   </head>
   <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-background">
       <h1>
         <a href="dashboard.html"> <i class="fas fa-code"></i>DevBook </a>
       </h1>
@@ -29,36 +29,42 @@
     </nav>
 
     <section class="container">
-      <h1 class="large text-primary">
-        Sign Up
-      </h1>
-      <p class="lead">
-        <i class="fas fa-user">
-          Create Your Account
-        </i>
-      </p>
-      <form action="" class="form">
-        <div class="form-group">
-          <input type="text" placeholder="Name" />
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Email" />
-          <small class="form-text">
-            This site uses Gravatar, so if you want a profile image, use a
-            Gravatar email
-          </small>
-        </div>
-        <div class="form-group">
-          <input type="password" placeholder="Password" minlength="6" />
-        </div>
-        <div class="form-group">
-          <input type="password" placeholder="Confirm assword" minlength="6" />
-        </div>
-        <input type="submit" value="Register" class="btn-primary" />
-      </form>
-      <p class="my-1">
-        Already have an account? <a href="login.html">Sign In</a>
-      </p>
+      <div class="card register">
+        <h1 class="large text-primary">
+          Sign Up
+        </h1>
+        <p class="lead">
+          <i class="fas fa-user">
+            Create Your Account
+          </i>
+        </p>
+        <form action="" class="form">
+          <div class="form-group">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" />
+            <small class="form-text">
+              This site uses Gravatar, so if you want a profile image, use a
+              Gravatar email
+            </small>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" minlength="6" />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Confirm assword"
+              minlength="6"
+            />
+          </div>
+          <input type="submit" value="Register" class="btn-primary" />
+        </form>
+        <p class="my-1">
+          Already have an account? <a href="login.html">Sign In</a>
+        </p>
+      </div>
     </section>
   </body>
 </html>

@@ -17,7 +17,7 @@
     <title>Welcome to DevBook</title>
   </head>
   <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-background">
       <h1>
         <a href="dashboard.html"> <i class="fas fa-code"></i>DevBook </a>
       </h1>
@@ -48,50 +48,52 @@
         you have attended
       </p>
       <small>* = required field</small>
-      <form class="form">
-        <div class="form-group">
-          <input
-            type="text"
-            placeholder="* School or Bootcamp"
-            name="school"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <input
-            type="text"
-            placeholder="* Degree or Certificate"
-            name="degree"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <input type="text" placeholder="Field Of Study" name="fieldofstudy" />
-        </div>
-        <div class="form-group">
-          <h4>From Date</h4>
-          <input type="date" name="from" />
-        </div>
-        <div class="form-group">
-          <h4>To Date</h4>
-          <input type="date" name="to" />
-        </div>
-        <div class="form-group">
-          <p>
-            <input type="checkbox" name="current" value="" /> Current School
-          </p>
-        </div>
-        <div class="form-group">
-          <textarea
-            name="description"
-            cols="30"
-            rows="5"
-            placeholder="Program Description"
-          ></textarea>
-        </div>
-        <input type="submit" class="btn btn-primary my-1" />
-        <a class="btn my-1" href="dashboard.html">Go Back</a>
-      </form>
+      <div class="card add-education">
+        <form class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="* School or Bootcamp"
+              name="school"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="* Degree or Certificate"
+              name="degree"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Field Of Study" name="fieldofstudy" />
+          </div>
+          <div class="form-group">
+            <h4>From Date</h4>
+            <input type="date" name="from" />
+          </div>
+          <div class="form-group">
+            <h4>To Date</h4>
+            <input type="date" name="to" />
+          </div>
+          <div class="form-group">
+            <p>
+              <input type="checkbox" name="current" value="" /> Current School
+            </p>
+          </div>
+          <div class="form-group">
+            <textarea
+              name="description"
+              cols="30"
+              rows="5"
+              placeholder="Program Description"
+            ></textarea>
+          </div>
+          <input type="submit" class="btn btn-primary my-1" />
+          <a class="btn my-1" href="dashboard.html">Go Back</a>
+        </form>
+      </div>
     </section>
   </body>
 </html>
